@@ -19,7 +19,11 @@ export default {
       md: "768px",
       lg: "1200px",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        syncopate: ['"Syncopate"', "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
