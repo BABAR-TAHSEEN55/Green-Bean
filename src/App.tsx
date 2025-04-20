@@ -1,10 +1,12 @@
+import HeroSection from "./Components/HeroSection";
 import Navbar from "./Components/NavBar";
 
 const App = () => {
   return (
-    <div className="">
+    <>
       <Navbar />
-    </div>
+      <HeroSection />
+    </>
   );
 };
 export default App;
