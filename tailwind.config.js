@@ -22,6 +22,7 @@ export default {
     extend: {
       fontFamily: {
         syncopate: ['"Syncopate"', "sans-serif"],
+        bai: ['"Bai Jamjuree"', "sans-serif"],
       },
     },
   },
