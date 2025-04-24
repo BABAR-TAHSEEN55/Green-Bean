@@ -1,20 +1,21 @@
-import { useState } from "react";
+import React from "react";
 import { IMAGES } from "../constants/constants";
-const Gallery = (gal: (typeof IMAGES)[number]) => {
-  return (
-    <div className="container">
-      <h1>{gal.title}</h1>
-    </div>
-  );
-};
+
 const CallToAction = () => {
-  const [isActive, setIsActive] = useState(false);
   return (
-    <div className="lg:m-12 max-w-full">
-      <div className="" style={{ backgroundColor: "#" }}>
+    <div className="bg-red-400">
+      <div className="flex  flex-col gap-8 ">
         {IMAGES.map((value, index) => (
-          <div>
-            <Gallery key={index} {...value} />
+          <div
+            className="container mt-12 object-contain max-w-xl relative lg:flex"
+            key={index}
+          >
+            <img src={value.src} alt="" className="" />
+            <div className="">
+              <p className="text-center text-4xl">{value.title}</p>
+              <p className="text-center">{value.subtitle}</p>
+              <p className="text-center">{value.category}</p>
+            </div>
           </div>
         ))}
       </div>
