@@ -23,6 +23,8 @@ export default {
       fontFamily: {
         syncopate: ['"Syncopate"', "sans-serif"],
         bai: ['"Bai Jamjuree"', "sans-serif"],
+        bodoni: ['"Bodoni Moda"', "serif"],
+        lbodoni: ['"Libre Bodoni"', "serif"],
       },
     },
   },
