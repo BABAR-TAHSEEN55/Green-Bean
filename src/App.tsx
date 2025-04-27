@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
-import About from "./Components/About";
+// import About from "./Components/About";
 import CallToAction from "./Components/CallToAction";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";

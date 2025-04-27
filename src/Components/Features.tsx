@@ -1,7 +1,7 @@
 import { PHOTOS } from "../constants/constants";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { motion } from "framer-motion";
-import img from "../assets/hanvin-cheong-xGIVEh15EFM-unsplash.jpg";
+// import img from "../assets/hanvin-cheong-xGIVEh15EFM-unsplash.jpg";
 const Features = () => {
   return (
     <div className="md:mt-8 " data-scroll-container>
