@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
-  const [Toggle, setToggle] = useState(false);
+  // const [Toggle, setToggle] = useState(false);
   const HanddleToggle = () => {
     // setToggle(true);
     alert("Hola Senor");

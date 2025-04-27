@@ -35,7 +35,7 @@ const App = () => {
     const lenis = new Lenis();
 
     // Use requestAnimationFrame to continuously update the scroll
-    function raf(time) {
+    function raf(time: DOMHighResTimeStamp) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
