@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Features = () => {
   return (
     <div className="md:mt-8 " data-scroll-container>
-      <div className="container flex gap-8 flex-col md:flex-row border items-center justify-center md:justify-between">
+      <div className="container flex gap-8 flex-col md:flex-row  items-center justify-center md:justify-between">
         {PHOTOS.map((value, index) => (
           <div className="object-cover ">
             <motion.img
@@ -13,7 +13,7 @@ const Features = () => {
               initial={{ opacity: 0, scale: 0.8 }} // initial state (invisible, smaller)
               whileInView={{ opacity: 1, scale: 1 }} // target state (fully visible, original size)
               viewport={{ once: true }} // animation happens only once
-              transition={{ duration: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
               // loading="lazy"
               src={value}
               key={index}
