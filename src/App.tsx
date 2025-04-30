@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 // import About from "./Components/About";
+// import LocomotiveScroll from "locomotive-scroll";
 import CallToAction from "./Components/CallToAction";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";
 import HeroSection from "./Components/HeroSection";
 import Navbar from "./Components/NavBar";
+import About from "./Components/About";
 
 const App = () => {
   const myRef = useRef<number | null>(null);
@@ -32,7 +34,7 @@ const App = () => {
 
   useEffect(() => {
     // Initialize Lenis
-    const lenis = new Lenis();
+    const lenis = new Lenis({});
 
     // Use requestAnimationFrame to continuously update the scroll
     function raf(time: DOMHighResTimeStamp) {
@@ -42,6 +44,20 @@ const App = () => {
 
     requestAnimationFrame(raf);
   }, []);
+
+  // useEffect(() => {
+  //   const el = document.querySelector(
+  //     "[data-scroll-container]"
+  //   ) as HTMLElement | null;
+
+  //   if (el) {
+  //     const scroll = new LocomotiveScroll({
+  //       el,
+  //       smooth: true,
+  //     });
+  //   }
+  // }, []);
+
   // Add Locomotive
   // const HandleCount = () => {
   //   setCount((count) => count + 1);
@@ -76,6 +92,7 @@ const App = () => {
           <Navbar />
           <HeroSection />
           <Features />
+          <About />
           <CallToAction />
           <Footer />
           {/* <About /> */}
