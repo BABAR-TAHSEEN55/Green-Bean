@@ -21,10 +21,18 @@ const CallToAction = () => {
               alt=""
               className="rounded-xl"
             />
-            <div className="">
-              <p className="text-center text-4xl">{value.title}</p>
-              <p className="text-center">{value.subtitle}</p>
-              <p className="text-center">{value.category}</p>
+            <div className="md:flex md:items-center md:justify-center m-2">
+              <div>
+                <p className="text-center text-6xl mt-3 md:mt-4 font-lbodoni text-[#dbd8d6] ">
+                  {value.title}
+                </p>
+                <p className="text-center bg-transparent text-[#dbd8d6] font-semibold font-syncopate uppercase mt-2 md:mt-2 md:text-xl">
+                  {value.subtitle}
+                </p>
+                <p className="text-center text-xl font-bai uppercase">
+                  {value.category}
+                </p>
+              </div>
             </div>
           </div>
         ))}
